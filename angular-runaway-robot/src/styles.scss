@@ -1,0 +1,58 @@
+:root {
+    --primary: #AEF9B6;
+    --light-text: #faf0e6;
+    --button-color : #24A021;
+    --button-hover : #1B9118;
+    --icon-color: #F5F5F5;
+  }
+
+button {
+    background-color: var(--button-color);
+    width: 250px;
+    height: 90px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    color: var(--light-text);
+}
+
+.button-round {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.button-round span {
+    font-size: 55px;
+    color : var(--icon-color);
+}
+
+button:hover{
+    // box-shadow: 7px 8px 9px 1px rgb(50,P 50, 145);
+     background-color: var(--button-hover);
+ }
+
+ button:disabled {
+    background-color:lightgray;
+    color : grey;
+    pointer-events: none;
+ }
+
+
+ @font-face {
+    font-family: CharmBold;
+    src: url(assets/Font/Charm/Charm-Bold.ttf) format("opentype");
+  }
+
+  
+ @font-face {
+    font-family: Chicle;
+    src: url(assets/Font/Chicle/Chicle-Regular.ttf) format("opentype");
+  }
+
+  
+:host {
+    display: block;
+    height: 100%;
+  //  padding: 15px !important;
+}

@@ -1,0 +1,77 @@
+.state-container {
+  display: flex;
+  height: 100%;
+}
+
+.map-container {
+  // display: flex;
+  // flex-direction: row;
+  border: 3px solid var(--button-color);
+  border-radius: 10px;
+  height: calc(100% - 30px);
+  width: 50%;
+  padding: 15px;
+  
+}
+
+.destination-and-buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.destination-selection-container {
+  height: calc(100% - 115px);
+  background-color: var(--button-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.buttons {
+  height: 100px;
+  background-color: var(--primary);
+
+  border-radius: 10px;
+  border: none;
+  display: flex;
+}
+
+.button-container {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.state-name {
+  height: 60px;
+  font-family: CharmBold;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  color: var(--button-color);
+}
+
+// :host {
+//   display: block;
+//   height: 100%;
+// }
+
+svg {
+     transform: scale(0.4) translate(0%,-65%);;
+     overflow: visible;
+
+}
+
+.source {
+  color : var(--button-color);
+
+}
+
+

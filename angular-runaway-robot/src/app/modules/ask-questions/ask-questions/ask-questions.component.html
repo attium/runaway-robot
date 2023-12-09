@@ -1,0 +1,43 @@
+<div class = "state-container"> 
+    <div class = "state-img-and-name">
+        <div class = "state-name">
+           {{ selectedState }} 
+        </div>
+
+        <div class = "state-img">
+
+        </div>
+
+    </div>
+
+    <div class = "witness-response-and-buttons">
+        <div class = "witness-response">
+            <div class = "speech-bubble">
+                {{ touristSaid}}
+            </div>
+            <img src="assets/svgs/tourist-svgrepo-com.svg" class = "tourist-image">
+        </div>
+
+        <div class = "buttons">
+
+            <div class = "button-container">
+                <button class = "button-round" (click) = "backToState()"> 
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                        </span>
+                </button>
+            </div>
+            <div class = "button-container">
+                <button class = "button-round" (click) = "travel()"> 
+                    <span class="material-symbols-outlined" >
+                        travel_explore
+                        </span>
+                </button>
+            </div>
+          
+
+           
+        </div>
+    </div>
+</div>
+

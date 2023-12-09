@@ -1,0 +1,71 @@
+<div class="state-container" *ngIf="!showAnimation">
+    <div class="state-img-and-name">
+        <div class="state-name">
+            {{ selectedState }}
+        </div>
+
+        <div class="state-img">
+            <img [src]="imgUrl">
+
+        </div>
+
+    </div>
+
+    <div class="state-info-and-buttons">
+        <div class="state-info" *ngIf="showStateInfo; else askQuestion">
+
+            {{stateInfo}}
+
+        </div>
+
+        <ng-template #askQuestion>
+            <div class="witness-response">
+                <div class="speech-bubble">
+                    {{ speechBubbleContent}}
+                </div>
+                <img src="assets/svgs/tourist-svgrepo-com.svg" class="tourist-image">
+            </div>
+
+        </ng-template>
+
+        <ng-container *ngIf="stateGeneratorService.indexOfLastCorrectState!=4">
+            <div class="buttons">
+                <div class="button-container">
+                    <button class="button-round" (click)="askQuestions()" *ngIf="showStateInfo; else backButton">
+                        <span class="material-symbols-outlined">
+                            contact_support
+                        </span>
+                    </button>
+
+                    <ng-template #backButton>
+                        <button class="button-round" (click)="backToState()">
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                        </button>
+                    </ng-template>
+
+                </div>
+                <div class="button-container">
+                    <button class="button-round" (click)="travel()">
+                        <span class="material-symbols-outlined">
+                            travel_explore
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
+
+<div class="state-container" *ngIf="showAnimation">
+    <img src="assets/video/traveling-robot-white.gif" id="traveling-robot-gif">
+</div>
+
+
+
+
+
+
+

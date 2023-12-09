@@ -1,0 +1,15 @@
+<div class = 'video-container'>
+    <button class = "button-round" (click) = "goBack()"> Back</button>
+    <ng-container *ngIf="indexOfLastCorrectState==4; else robotStory"> 
+        <video src = 'assets/video/tejas-is-found.mp4' autoplay muted>
+
+        </video>
+    </ng-container>
+
+    <ng-template #robotStory> 
+        <video src = 'assets/video/robot-story.mp4'  autoplay muted (ended) ="startGame()">
+
+        </video>
+    </ng-template>
+    <button class = "button-round" (click)="skip()"> Skip</button>
+</div>
