@@ -77,6 +77,7 @@
 * Odisha
     - https://www.britannica.com/place/Konark-Sun-Temple
     - http://www.thekonark.in/
+    - https://whc.unesco.org/en/tentativelists/5896/
 * Punjab
     - https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/patiala/sheesh-mahal.html
 * Puducherry

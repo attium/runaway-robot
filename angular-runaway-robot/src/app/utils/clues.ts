@@ -59,7 +59,7 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: "Chitrakote falls on the Indravati river is India's widest waterfall, located in Chattisgarh. The waterfall is known for its distinct horseshoe shape.",
     },
   ],
-  // 'Dadra and Nagar Haveli and Daman and Diu': [],
+   'Dadra and Nagar Haveli and Daman and Diu': [],
   Delhi: [
     {
       clue: 'He mentioned an iron pillar that never rusts',
@@ -183,11 +183,15 @@ export const STATE_WISE_CLUES: CluesByState = {
   Odisha: [
     {
       clue: 'He said he was going to visit the largest brackish water lake in India',
-      info: 'Brackish water is a mixture of seawater and freshwater. Chilka Lake, in Odisha, is the largest brackish water lake in India.',
+      info: 'Brackish water is a mixture of seawater and freshwater. Chilka Lake, in Odisha, is the largest brackish water lake in India. During the winter months, it becomes home to the largest group of migratory birds in the Indian Sub-continent. The lake has been declared a UNESCO world heritage site.',
     },
     {
       clue: 'He said he was going to see a chariot-shaped monument',
       info: 'The Konark Sun Temple in Odisha represents the chariot of the Sun God, Surya. The 24 intricately carved wheels of the chariot also work as sundials.',
+    },
+     {
+      clue: 'He wanted to see an Olive Ridley turtle!',
+      info: "The coast of Odisha is the world's largest mass nesting-ground for Olive Ridley turtles. During the nesting season, lakhs of Olive Ridley turtles come ashore to build nests and lay eggs on the coast of Odisha. The Olive Ridley turtle is an endangered species, and the government, locals and other organizations are making efforts to protect it.  ",
     },
   ],
   Punjab: [
